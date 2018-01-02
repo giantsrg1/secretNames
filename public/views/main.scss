@@ -1,0 +1,60 @@
+$width: 48em;
+$loading-color: #f3f3f3;
+$secondary-loading-color: #3498db;
+
+.container {
+    padding-top: 10px;
+    
+    #secretName,
+    #clear {
+        text-align: center;
+    }
+
+    #secretName {
+        color: white;
+        background-color: white;
+    }
+
+    #ghosts {
+        color: black;
+        background-color: #d3d3d3;
+        margin-top: 10px;
+        padding: 0px;
+
+        .ghost {
+            @media screen and (min-width: $width) {
+                text-align: left;
+            }
+            text-align: center;
+            margin: 0;
+            padding: 10px 0 10px 0;
+            .images {
+                border-radius: 50%;
+            }
+        }
+
+        .ghost:not(:first-child) {
+            border-top: 5px dashed red;
+        }
+    }
+
+    .loader {
+        position: absolute;
+        left: 45%;
+        border: 16px solid $loading-color;
+        border-top: 16px solid $secondary-loading-color;
+        border-bottom: 16px solid $secondary-loading-color;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

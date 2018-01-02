@@ -1,15 +1,12 @@
 //required packages ====================
 const express = require('express');
 const path = require('path');
+const morgan = require('morgan');
 
 //init app ====================
 const app = express();
 const port = process.env.PORT || 8080;
 app.use(morgan('tiny')); //logging
-
-//body parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 // set public folder
 app.use(express.static(path.join(__dirname, 'public')));
