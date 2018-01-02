@@ -1,0 +1,23 @@
+{
+  "name": "secretnames",
+  "version": "1.0.0",
+  "description": "inteview exam",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giantsrg1/secretNames.git"
+  },
+  "author": "Scott Goldstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giantsrg1/secretNames/issues"
+  },
+  "homepage": "https://github.com/giantsrg1/secretNames#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
