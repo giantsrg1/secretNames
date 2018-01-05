@@ -22,6 +22,7 @@ Use: Bootstrap, Jquery, SCSS, HTML
 * _public/dist_ : minimized CSS and JS
 * _public/views_ : main Scss and JS files
 * _server.js_ : Node/Express Server to host webpage
+* _gulpfile.js_ : Task manager for development workflow
 
 ## How to Run
 
