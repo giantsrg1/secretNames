@@ -5,11 +5,12 @@ const morgan = require('morgan');
 
 //init app ====================
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8111;
 app.use(morgan('tiny')); //logging
 
 // set public folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use("/node_modules", express.static(__dirname + '/node_modules'));
 
 //routes ====================
 //main route

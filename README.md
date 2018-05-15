@@ -22,18 +22,18 @@ Use: Bootstrap, Jquery, SCSS, HTML
 * _public/dist_ : minimized CSS and JS
 * _public/views_ : main Scss and JS files
 * _server.js_ : Node/Express Server to host webpage
+* _package.json_ : Where the site dependencies live
 * _gulpfile.js_ : Task manager for development workflow
 
 ## How to Run
 
 1. Clone Github
-2. Make sure you have npm and node installed
-3. global install Bower (for css classes) and Gulp (if you want to see the gulpfile run)
-4. ```> npm install```
-5. ```> bower install```
-6. if gulp is installed, run ```> gulp```.
+2. Install Yarn
+2. Install Node
+4. ```> yarn```
+6. if gulp is installed, run ```> node_modules\.bin\gulp```.
 7. ```> npm start``` (this will run the server)
-8. go to localhost:8080
+8. go to localhost:8111
 
 ### Author
 

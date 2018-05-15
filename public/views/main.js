@@ -27,9 +27,9 @@
     function createRow(ghost) {
         return (
             $('<div class="row ghost">').append(
-                $('<div class="col-md-2 col-xs-12">').append(
-                    $('<img class="img-responsive images" >').attr('src', ghost.image)),
-                $('<div class="col-md-10 col-xs-12">').append(
+                $('<div class="col">').append(
+                    $('<img class="img-fluid images" >').attr('src', ghost.image)),
+                $('<div class="col">').append(
                     $('<div class="row">').append(
                         $('<h1></h1>').text(ghost.name.toUpperCase())),
                     $('<div class="row">').append(
