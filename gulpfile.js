@@ -11,7 +11,7 @@ gulp.task('sass', function() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./public/dist'));
+        .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('js', function() {
@@ -20,7 +20,7 @@ gulp.task('js', function() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./public/dist'));
+        .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('default', ['sass', 'js'], function() {});

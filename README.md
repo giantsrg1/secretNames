@@ -28,12 +28,12 @@ Use: Bootstrap, Jquery, SCSS, HTML
 ## How to Run
 
 1. Clone Github
-2. Install Yarn
 2. Install Node
-4. ```> yarn```
-6. if gulp is installed, run ```> node_modules\.bin\gulp```.
-7. ```> npm start``` (this will run the server)
-8. go to localhost:8111
+3. ```> cd [into folder]```
+3. ```> npm```
+4. ```> node_modules\.bin\gulp```.
+5. ```> npm start``` (this will run the server)
+6. go to localhost:8111
 
 ### Author
 
